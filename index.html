@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sentence = prompt("Enter  a sentence");
+        let checkWord = prompt("Enter a word to check:");
+        let oldWord = prompt("Enter the word you want to replace:");
+        let newWord = prompt("Enter the new word:");
+        
+        let words = sentence.trim().split(" ");
+        let wordCount = words.length;
+        
+        let isPresent = sentence.includes(checkWord);
+        let replaced = sentence.replace(oldWord, newWord);
+
+
+        alert(`
+           Original Sentence: ${sentence}\n 
+           Number of Words: ${wordCount}\n 
+           After Replacing: ${replaced}\n 
+           Presentword "${checkWord}"? ${isPresent}
+        `);
+    </script>
+    
+</body>
+</html>
